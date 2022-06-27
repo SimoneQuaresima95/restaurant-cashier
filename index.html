@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Kdam+Thmor+Pro&display=swap');
+  </style>
+
+  <title>SUSHIAMITUTTO</title>
+</head>
+
+<body>
+
+  <h1>SASHIAMI TUTTO</h1>
+
+  <h2>Seleziona il numero di ordini poi clicca sull'immagine per inviare</h2>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/Nigiri-Sake.jpg" class="card-img-top" onclick="foodButton1()">
+        <div class="card-body">
+          <h5 class="card-title">Nigiri sake 3$ 2pz</h5>
+          <input type="number" id="an" min="0" placeholder="Seleziona la quantità">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/ebi-nigiri.jpg" class="card-img-top" onclick="foodButton2()">
+        <div class="card-body">
+          <h5 class="card-title">Nigiri ebi 3$ 2pz</h5>
+          <input type="number" id="bn" min="0" placeholder="Seleziona la quantità">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/shutterstock_1651647217.jpg" class="card-img-top" onclick="foodButton3()">
+        <div class="card-body">
+          <h5 class="card-title">Hosomaki salmone 4$ 4pz</h5>
+          <input type="number" id="cn" min="0" placeholder="Seleziona la quantità">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/hosomaki-di-tonno.jpg" class="card-img-top" onclick="foodButton4()">
+        <div class="card-body">
+          <h5 class="card-title">hosomaki tonno 4$ 4pz</h5>
+          <input type="number" id="dn" min="0" placeholder="Seleziona la quantità">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/temakisalmone.jpg" class="card-img-top" onclick="foodButton5()">
+        <div class="card-body">
+          <h5 class="card-title">Temaki sake 5$ 1pz</h5>
+          <input type="number" id="en" min="0" placeholder="Seleziona la quantità">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/10089427695f7f6bae848f58.82960159.jpg" class="card-img-top" onclick="foodButton6()">
+        <div class="card-body">
+          <h5 class="card-title">Temaki maguro 5$ 1pz</h5>
+          <input type="number" id="fn" min="0" placeholder="Seleziona la quantità">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottana">
+    <input type="button" value="Reset order" id="reset" onclick="cancella()">
+    <input type="button" value="Conto" id="g" onclick="price()">
+    <input type="button" value="Cancella scontrino" id="cs" onclick="cansco()">
+  </div>
+
+
+
+  <h2>L'ordine arriva in cucina</h2>
+
+  <div id="cucina"></div>
+
+  <h2>Conto Totale</h2>
+
+  <div id="Totale"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="sushi.js"></script>
+
+</body>
+
+</html>

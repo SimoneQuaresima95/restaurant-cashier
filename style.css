@@ -1,0 +1,26 @@
+body{
+    font-family: 'Domine', serif;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    background-image:url("https://muramasasushi.it/wp-content/uploads/2021/07/top-view-delicious-sushi-with-copy-space-1920x1080.jpg");
+    background-size:contain;
+}
+    
+h1,h2,#cucina,#Totale{
+    color: #e55137;
+    display:flex;
+    justify-content: center;
+}
+
+.bottana{
+    display: flex;
+    justify-content:center;
+}
+
+#g,#reset,#cs{
+    margin:5px 5px ;
+}
+
+
+.row,h1,h2,#cucina,#Totale{
+    margin:5px 0;
+}
